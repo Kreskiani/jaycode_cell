@@ -23,6 +23,8 @@ Route::post('/admin/provider/provider-save/', 'admin_provider_ctrl@provider_save
 // admin_transaksi_ctrl
 Route::get('/admin/transaksi/', 'admin_transaksi_ctrl@form_transaksi');
 Route::post('/admin/transaksi-save','admin_transaksi_ctrl@transaksi_store')->name('transaksi-save');
+Route::get('/admin/transaksi-edit/{id}','admin_transaksi_ctrl@transaksi_edit')->name('transaksi-edit');
+Route::post('/admin/transaksi-update/{id}','admin_transaksi_ctrl@transaksi_update')->name('transaksi-update');
 
 Route::get('/', function () {
     return view('welcome');

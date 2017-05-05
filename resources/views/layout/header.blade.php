@@ -49,12 +49,13 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <a href="#" class="btn btn-info ">Profile</a>
                 </div>
                 <div class="pull-right">
                   <a href=""
                       onclick="event.preventDefault();
-                               document.getElementById('logout-form').submit();">
+                               document.getElementById('logout-form').submit();"
+                      class="btn btn-info">
                       Logout
                   </a>
                   <form id="logout-form" action="" method="POST" style="display: none;">

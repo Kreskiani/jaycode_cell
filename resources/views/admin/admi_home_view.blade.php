@@ -28,6 +28,26 @@
 						</div>
 					</div>
 				</div>
+				<!-- /.col -->
+		        <div class="col-md-12">
+		          <div class="box box-info box-solid">
+		            <div class="box-header with-border">
+		              <h3 class="box-title">Info</h3>
+		              <div class="box-tools pull-right">
+		                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+		                </button>
+		              </div>
+		              <!-- /.box-tools -->
+		            </div>
+		            <!-- /.box-header -->
+		            <div class="box-body">
+		              Tanda minus (-) pada kolom hutang menandakan Kembalian
+		            </div>
+		            <!-- /.box-body -->
+		          </div>
+		          <!-- /.box -->
+		        </div>
+		        <!-- /.col -->
 			<div class="box-body ">
 				<table id="example1" class="table table-bordered table-striped">
 					<thead>
@@ -44,6 +64,7 @@
 							<th>Dibayar</th>
 							<th>Hutang</th>
 							<th>Sisa Saldo</th>
+							<th>Action</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -64,6 +85,7 @@
 									<td>Rp. {{ $row->TRANS_Dibayar }}</td>
 									<td>Rp. {{ $row->TRANS_Hutang }}</td>
 									<td>Rp.595.000</td>
+									<td><a href="/admin/transaksi-edit/{{ $row->id }}" class="btn btn-primary">Edit</a></td>
 								</tr>
 							<?php 
 							$i++;
